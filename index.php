@@ -31,6 +31,9 @@
         .h1{
             text-align: center;
         }
+		.pump-class {
+		  background-color: blue;
+		}
 </style>
 <body>
     <!-- <?php 
