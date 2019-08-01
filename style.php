@@ -187,6 +187,7 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -198,5 +199,13 @@ ul.topnav li.right {float: right;}
 @media screen and (max-width: 600px) {
   ul.topnav li.right, 
   ul.topnav li {float: none;}
+}
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
 }
 </style>

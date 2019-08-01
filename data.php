@@ -16,15 +16,8 @@
     include 'style.php';
     ?>
 <body class="body-main">
-        <ul class="topnav">
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">Profile</a></li>
-            <li><a href="#contact">Edit Profile</a></li>
-            <li><a href="data_add.php">Insert Data</a></li>
-            <li><a href="logout.php">Log out</a></li>
-            
-              
-                
+      
+
         <?php 
         include 'condb.php';
         $sql_string = " SELECT * FROM in_cars 
@@ -42,42 +35,9 @@
         // }
         if($_SESSION["username"] !=''){ 
             if($result->num_rows>0){
-            
-                // echo "id ".$row["in_carsid"]." ".$row["in_carsbrand"]." ".$row["in_carsmodel"]." ".$row["in_carsyear"]
-                // ." ".$row["in_carscolor"]." ".$row["in_carscolorcode"]." ".$row["in_carstype"]." ".$row["in_carscountry"]
-                // ." ".$row["in_carsengine"]." ".$row["in_carsprice"]."<br>";
-                // echo "<br>";
-                ?>
-                <?php 
-                $sql_user = "SELECT * FROM in_user WHERE user_name = '".$_SESSION["username"]."'";
-                $result2 = $conn->query($sql_user);
-                $result2->num_rows>0;
-                while ($row2 = $result2->fetch_assoc()) {
-                    if ($row2["user_name"]!=''&& $row2["user_password"]!=''&& $row2["user_nickname"]=='') {
-                ?>
-
-
-
-
-
-                     <div style="text-align:right;">
-                     ชื่อผู้ใช้ : ไม่มี
-                <a href="profile.php">โปรไฟล์</a>
-                <a href="edit_profile.php">แก้ไขโปรไฟล์</a>
-                </div>
-                <?php    
-                    }else {
-                ?>
-                     <div style="text-align:right;">
-                     <li class="right"><a href="#about">ชื่อผู้ใช้:
-                <?=$row2["user_nickname"]; ?>
-                </a></li>
-                </div>
-                <?php            
-                    }
-                 }
+                include 'head.php';   
                  ?>
-                </ul>
+                
                 <br>
                 <h1 class="h1-pro" style="text-align:center">Car Info</h1> 
                  <br>
@@ -133,21 +93,13 @@
        </ul></tr>
        </table>
        </div>
-
-        <hr>
-
-        <div class = "row">
-        <div class = "col-md-12">
-        <button class="button_3" onclick="window.location.href='data_add.php'">เพิ่มรถยนต์</button>  
-        </div>
-        </div>
-        <hr>
+        
         <?php 
        
     }
-    
+        include 'footer.php';
         ?>
-        <a href="logout.php"><button class="button_4" type="submit" >Log out</button></a>
+
         <script>
     function logout() {
         window.location.href = "logout.php";
