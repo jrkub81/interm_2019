@@ -145,4 +145,18 @@ input{
 .good{
   color:green;
 }
+.body-login{ 
+  background-image:url("carsimg/bgone.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.img-pro{
+  border-radius: 50%;
+}
+.h1-pro{
+  font-family: 'Lobster', cursive;
+}
 </style>
