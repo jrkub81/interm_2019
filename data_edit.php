@@ -15,7 +15,7 @@
     <?php 
    include 'style.php';
    ?>
-<body>
+<body class="body-main">
     <h1 style="text-align:center">แก้ไขข้อมูล</h1>
     <?php 
    include 'condb.php';
@@ -68,6 +68,7 @@
     <form action="?" method = "post" class= "ed-tb">
               <table class = my-table> 
               <h2 style = "text-align: center">แก้ไขข้อมูลรถยนต์</h2>
+              <br>
               <tr>
               <th>แบรนด์</th>
               <th>โมเดล</th>

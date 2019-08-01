@@ -15,7 +15,7 @@
    <?php 
     include 'style.php';
     ?>
-<body>
+<body class="body-main">
 
         <?php 
         include 'condb.php';
@@ -82,10 +82,11 @@
                 <?php 
                  while ($row = $result->fetch_assoc()) {
                 ?>
-                 <tr><td><?=$row["in_carsid"]?></td>
-                <td><?=$row["cb_name"]?></td>
-                <td><?=$row["in_carsmodel"]?></td>
-                <td><?=$row["in_carsyear"]?></td>
+                 <tr>
+                 <td style="text-align:center"><?=$row["in_carsid"]?></td>
+                <td style="text-align:center"><?=$row["cb_name"]?></td>
+                <td style="text-align:center"><?=$row["in_carsmodel"]?></td>
+                <td style="text-align:center"><?=$row["in_carsyear"]?></td>
                 <td><font color =<?=$row["in_carscolorcode"]?>><?=$row["in_carscolor"]?></font></td>
                 <td><ul><?="<li><b>ประเภทรถยนต์: </b>".$row["ct_name"]."<br>".
                 "<li><b>ประเทศ: </b>".$row["cc_name"]."<br>".

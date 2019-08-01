@@ -8,6 +8,7 @@
             border-collapse: separate;
             margin-left: auto;
             margin-right: auto;
+            background-color:#ffffff;
         }
         .my-table tr td,
         .my-table tr th {
@@ -150,6 +151,14 @@ input{
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.body-main{ 
+  background-image:url("carsimg/bgone.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: repeat;
   background-size: cover;
   
 }
