@@ -12,7 +12,7 @@ session_start();
     <?php 
     include 'style.php';
     ?>
-<body class="body-login">
+<body class="body-main">
         <?php 
         include 'condb.php';
         // $sql_string = "SELECT * FROM in_cars";
@@ -37,7 +37,7 @@ session_start();
     <div class="input-group-prepend">
       <span class="input-group-text h1-pro" id="inputGroup-sizing-lg">Password</span>
     </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="password" required>
+    <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="password" required>
     </div>
     <br>
     <button class ="button_3 h1-pro" type="submit">submit</button>

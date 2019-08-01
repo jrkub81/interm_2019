@@ -3,9 +3,10 @@
         font-family: 'Sarabun', sans-serif;
     }
     .my-table {
-            width: auto;
+            width: 100%;
             border-spacing: 0px;
-            border-collapse: separate;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
             margin-left: auto;
             margin-right: auto;
             background-color:#ffffff;
@@ -156,10 +157,12 @@ input{
 }
 .body-main{ 
   background-image:url("carsimg/bgone.jpg");
-  height: 100%; 
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  border: 1px solid #ddd;
   
 }
 .img-pro{
@@ -167,5 +170,33 @@ input{
 }
 .h1-pro{
   font-family: 'Lobster', cursive;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
 </style>
