@@ -4,9 +4,9 @@
  include 'style.php';
 ?>
 <ul class="topnav">
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">Profile</a></li>
-            <li><a href="#contact">Edit Profile</a></li>
+            <li><a class="active" href="data.php">Home</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="edit_profile.php">Edit Profile</a></li>
             <li><a href="data_add.php">Insert Data</a></li>
             <li><a href="logout.php">Log out</a></li>
 

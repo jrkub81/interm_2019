@@ -16,36 +16,14 @@
 <?php 
     include 'style.php';
     ?>
-<body>
+<body class="body-main">
     <?php 
     include 'condb.php';
 
     ?>
     <?php 
-                $sql_user = "SELECT * FROM in_user WHERE user_name = '".$_SESSION["username"]."'";
-                $result2 = $conn->query($sql_user);
-                $result2->num_rows>0;
-                while ($row2 = $result2->fetch_assoc()) {
-                    if ($row2["user_name"]!=''&& $row2["user_password"]!=''&& $row2["user_nickname"]=='') {
-                ?>
-                     <div style="text-align:right;">
-                     ชื่อผู้ใช้ : ไม่มี
-                <a href="profile.php">โปรไฟล์</a>
-                <a href="edit_profile.php">แก้ไขโปรไฟล์</a>
-                </div>
-                <?php    
-                    }else {
-                ?>
-                     <div style="text-align:right;">
-                ชื่อผู้ใช้ :
-                <?=$row2["user_nickname"]; ?>
-                <a href="profile.php">โปรไฟล์</a>
-                <a href="edit_profile.php">แก้ไขโปรไฟล์</a>
-                </div>
-                <?php            
-                    }
-                 }
-                 ?>
+     include 'head.php';
+    ?>
 
               <form action="insert_car.php" method = "POST" class= "ed-tb" enctype="multipart/form-data">
               <table class = my-table>
@@ -126,5 +104,8 @@
     ยกเลิก
     </button>
     </form>
+    <?php 
+     include 'footer.php';
+    ?>
 </body>
 </html>

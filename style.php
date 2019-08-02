@@ -157,12 +157,10 @@ input{
 }
 .body-main{ 
   background-image:url("carsimg/bgone.jpg");
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-  border: 1px solid #ddd;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   
 }
 .img-pro{

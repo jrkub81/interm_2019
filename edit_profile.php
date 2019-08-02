@@ -11,13 +11,14 @@
 <?php 
    include 'style.php';
     ?>
-<body>
+<body class="body-main">
     <?php 
     include 'condb.php';
     $sql_user = "SELECT * FROM in_user WHERE user_name = '".$_SESSION["username"]."'";
     $result = $conn->query($sql_user);
                 if ($result->num_rows > 0) { 
                     $row = $result->fetch_assoc();
+    include 'head.php';
     ?>
 
     <h1 style = "text-align: center">Edit Profile</h1>

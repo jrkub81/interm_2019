@@ -11,7 +11,10 @@ include 'condb.php';
 <head>
     <title>Profile</title>
 </head>
-<body>
+<body class="body-main">
+    <?php 
+    include 'head.php';
+    ?>
     <h1 style="text-align:center">My profile</h1>
     <?php 
     if ($result->num_rows > 0) {

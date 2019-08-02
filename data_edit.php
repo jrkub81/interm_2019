@@ -16,6 +16,9 @@
    include 'style.php';
    ?>
 <body class="body-main">
+    <?php 
+    include 'head.php';
+    ?>
     <h1 style="text-align:center">แก้ไขข้อมูล</h1>
     <?php 
    include 'condb.php';
@@ -202,5 +205,8 @@
     ยกเลิก
     </button>
     </form>
+    <?php 
+    include 'footer.php';
+    ?>
 </body>
 </html>
